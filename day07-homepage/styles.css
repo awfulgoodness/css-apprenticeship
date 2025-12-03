@@ -1,0 +1,406 @@
+/* -----------------------------------
+   LAYOUT UTILITIES
+----------------------------------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--s-24);
+}
+
+/* -----------------------------------
+   HERO
+----------------------------------- */
+.hero {
+  padding: 120px 0;
+  text-align: center;
+  background: var(--bg);
+}
+
+/* -----------------------------------
+   NAV
+----------------------------------- */
+.nav {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  padding: var(--s-16) 0;
+  margin-bottom: var(--s-48);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: var(--fs-lg);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: var(--s-24);
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.menu a:hover {
+  color: #e63946;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------
+   STORY SECTION
+----------------------------------- */
+.story {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.narrow {
+  max-width: 700px;
+}
+
+/* -----------------------------------
+   FEATURES SECTION
+----------------------------------- */
+.features {
+  padding: 80px 0;
+  background: #f4f7fa;
+}
+
+.grid-3 {
+  display: grid;
+  gap: var(--s-24);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feature-card {
+  background: var(--bg-card);
+  padding: var(--s-24);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* -----------------------------------
+   PRODUCT GRID
+----------------------------------- */
+.products {
+  padding: 80px 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--s-16);
+}
+
+/* Button: small (product card) */
+.btn-sm {
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--fs-sm);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn-sm:hover {
+  background: #e63946;
+  transform: translateY(-2px);
+}
+
+/* Button: main */
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--fs-md);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn:hover {
+  background: #e63946;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------
+   CTA
+----------------------------------- */
+.cta {
+  padding: 100px 0;
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+}
+
+.cta .btn {
+  background: #fff;
+  color: var(--accent);
+}
+
+.cta .btn:hover {
+  background: #e63946;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
+.footer {
+  text-align: center;
+  padding: var(--s-32);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+/* CTA button override */
+.cta .btn {
+  background: #fff;
+  color: var(--accent);
+}
+
+.cta .btn:hover {
+  background: #e63946;
+  color: #fff;
+  transform: translateY(-2px);
+}
+/* -----------------------------------
+   CTA BUTTON — ALWAYS VISIBLE
+----------------------------------- */
+.cta .btn {
+  background: #ffffff !important;
+  color: var(--accent) !important;
+  border: none;
+  display: inline-block;
+}
+
+.cta .btn:hover {
+  background: #e63946 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+/* -----------------------------------
+   LAYOUT UTILITIES
+----------------------------------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--s-24);
+}
+
+/* -----------------------------------
+   HERO
+----------------------------------- */
+.hero {
+  padding: 120px 0;
+  text-align: center;
+  background: var(--bg);
+}
+
+/* -----------------------------------
+   NAV
+----------------------------------- */
+.nav {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  padding: var(--s-16) 0;
+  margin-bottom: var(--s-48);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: var(--fs-lg);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: var(--s-24);
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.menu a:hover {
+  color: #e63946;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------
+   STORY SECTION
+----------------------------------- */
+.story {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.narrow {
+  max-width: 700px;
+}
+
+/* -----------------------------------
+   FEATURES SECTION
+----------------------------------- */
+.features {
+  padding: 80px 0;
+  background: #f4f7fa;
+}
+
+.grid-3 {
+  display: grid;
+  gap: var(--s-24);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feature-card {
+  background: var(--bg-card);
+  padding: var(--s-24);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* -----------------------------------
+   PRODUCT GRID
+----------------------------------- */
+.products {
+  padding: 80px 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--s-16);
+}
+
+/* Button: small (product card) */
+.btn-sm {
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--fs-sm);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn-sm:hover {
+  background: #e63946;
+  transform: translateY(-2px);
+}
+
+/* Button: main */
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--fs-md);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn:hover {
+  background: #e63946;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------
+   CTA
+----------------------------------- */
+.cta {
+  padding: 100px 0;
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+}
+
+.cta .btn {
+  background: #fff;
+  color: var(--accent);
+}
+
+.cta .btn:hover {
+  background: #e63946;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
+.footer {
+  text-align: center;
+  padding: var(--s-32);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+/* CTA button override */
+.cta .btn {
+  background: #fff;
+  color: var(--accent);
+}
+
+.cta .btn:hover {
+  background: #e63946;
+  color: #fff;
+  transform: translateY(-2px);
+}
+/* -----------------------------------
+   CTA BUTTON — ALWAYS VISIBLE
+----------------------------------- */
+.cta .btn {
+  background: #ffffff !important;
+  color: var(--accent) !important;
+  border: none;
+  display: inline-block;
+}
+
+.cta .btn:hover {
+  background: #e63946 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
