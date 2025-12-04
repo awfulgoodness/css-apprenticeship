@@ -1,0 +1,116 @@
+/* Bring in your tokens once you create them */
+@import "../tokens.css";
+
+/* Reset - nothing fancy, just a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+/* ----- Container ------ */
+main,
+.nav,
+.site-footer {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--s-24);
+}
+
+/* ----- Header & Nav ----- */
+main,
+.nav,
+.site-footer {
+  background: var(--bg-card);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--s-24);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: var(--fs-sm);
+}
+
+/* ----- Hero ----- */
+.hero {
+  padding: var(--s-64);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: var(--fs-xxl);
+  margin-bottom: var(--s-16);
+}
+
+.hero p {
+  font-size: var(--fs-lg);
+  color: var(--text-muted);
+  margin-bottom: var(--s-24);
+}
+
+.cta {
+  display: inline-block;
+  padding: var(--s-12) var(--s-24);
+  background: var(--accent);
+  color: white;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: var(--fs-base);
+}
+
+.cta:hover {
+  background: var(--accent-hover);
+}
+
+/* ----- Features ------ */
+.features {
+  display: grid;
+  gap: var(--s-32);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: var(--s-64);
+}
+
+.feature {
+  background: var(--bg-card);
+  padding: var(--s-24);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.feature h2 {
+  margin-bottom: var(--s-12);
+  font-size: var(--fs-lg);
+}
+
+.feature p {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+/* ----- Footer ------ */
+.site-footer {
+  margin-top: var(--s-64);
+  padding-bottom: var(--s-48);
+  text-align: center;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
