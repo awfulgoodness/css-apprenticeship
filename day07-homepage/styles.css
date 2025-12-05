@@ -404,3 +404,50 @@
   color: #ffffff !important;
   transform: translateY(-2px);
 }
+
+/* -------------------------
+   DAY 8 — PRODUCT GRID
+-------------------------- */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--s-24);
+}
+
+/* Product Card */
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: var(--s-12);
+}
+
+.product-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--s-16);
+}
+
+.btn-sm {
+  background: var(--accent);
+  color: #fff;
+  padding: var(--s-8) var(--s-16);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-sm:hover {
+  background: var(--accent-hover);
+}
+
+/* subtle hover on entire card */
+.product-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+}
