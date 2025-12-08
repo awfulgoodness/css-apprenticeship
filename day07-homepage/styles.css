@@ -97,6 +97,14 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
+.features .container {
+  max-width: 900px;
+}
+
+section {
+  transition: padding 0.2s ease, background 0.2s ease;
+}
+
 /* -----------------------------------
    PRODUCT GRID
 ----------------------------------- */
@@ -113,7 +121,7 @@
 
 .product-card {
   background: var(--bg-card);
-  padding: var(--s-16) var(--s-16) var(--s-32);  /* ← increased bottom padding */
+  padding: var(--s-16) var(--s-16) var(--s-32); /* ← increased bottom padding */
   border-radius: var(--radius);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -131,12 +139,10 @@
   margin-bottom: var(--s-12);
 }
 
-.product-card h3 {
-  margin-top: var(--s-12);
-  margin-bottom: var(--s-8);
-}
-
 .product-card p {
+  font-size: var(--fs-sm);
+  line-height: 1.45;
+  color: var(--text-muted);
   margin-bottom: var(--s-16);
 }
 
@@ -144,7 +150,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: var(--s-16);  /* ← this is what was missing */
+  margin-top: var(--s-16); /* ← this is what was missing */
 }
 
 /* SMALL BUTTON */
@@ -169,6 +175,11 @@
   color: #fff;
   padding: var(--s-8) var(--s-16);
   border-radius: var(--radius-sm);
+}
+
+.buy-btn {
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 .buy-btn:hover {
@@ -208,3 +219,32 @@
   font-size: var(--fs-sm);
 }
 
+/* DAY 8 — Section Rhythm */
+.story,
+.features,
+.products,
+.cta {
+  scroll-margin-top: var(--s-64);
+}
+
+.story {
+  padding-top: var(--s-64);
+}
+
+.products {
+  margin-top: var(--s-64);
+}
+
+.cta {
+  margin-top: var(--s-64);
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features .container {
+    padding: var(--s-24);
+  }
+}
