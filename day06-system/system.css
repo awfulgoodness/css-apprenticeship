@@ -103,3 +103,20 @@ body {
 .text-center {
   text-align: center;
 }
+/* -----------------------------------
+   CTA BUTTON FIX
+----------------------------------- */
+.cta .btn {
+  background: #ffffff;
+  color: var(--accent);
+  border: none;
+}
+
+.cta .btn:hover {
+  background: #e63946;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+.cta .btn {
+  background: red !important;
+}
