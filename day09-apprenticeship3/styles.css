@@ -68,14 +68,14 @@ body {
 
 /* MASTERWORK CARD */
 .card {
-  background: white;
+  width: 100%;
+  max-width: 420px;
+  margin: 0;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   display: grid;
   gap: var(--space-4);
-  max-width: 720px;
-  margin: 0 auto;
   margin-top: var(--space-7);
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
@@ -123,4 +123,20 @@ body {
   background: #222;
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* GRID SYSTEM */
+.card-grid {
+  margin-top: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: var(--space-7);
+  justify-items: center;
+  max-width: 1000px; /* new */
+  margin-left: auto; /* new */
+  margin-right: auto; /* new */
+  /* Remove hero spacing for grid cards */
+  .card-grid .card {
+    margin-top: 0;
+  }
 }
