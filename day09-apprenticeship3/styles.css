@@ -66,6 +66,11 @@ body {
   }
 }
 
+/* ----- Section (Vertical Rhythm Law) ----- */
+.section {
+  margin-top: var(--space-8);
+}
+
 /* MASTERWORK CARD */
 .card {
   width: 100%;
@@ -76,7 +81,7 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   display: grid;
   gap: var(--space-4);
-  margin-top: var(--space-7);
+  margin-top: 0;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
@@ -89,9 +94,6 @@ body {
 
 .card-body {
   padding: var(--space-5);
-  display: grid;
-  gap: var(--space-3);
-  max-width: 60ch;
 }
 
 .card-title {
@@ -126,17 +128,6 @@ body {
 }
 
 /* GRID SYSTEM */
-.card-grid {
-  margin-top: var(--space-8);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: var(--space-7);
-  justify-items: center;
-  max-width: 1000px; /* new */
-  margin-left: auto; /* new */
-  margin-right: auto; /* new */
-  /* Remove hero spacing for grid cards */
-  .card-grid .card {
-    margin-top: 0;
-  }
+.card-grid .card {
+  margin-top: 0;
 }
